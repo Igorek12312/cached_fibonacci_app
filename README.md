@@ -1,5 +1,5 @@
 # cached_fibonacci_app
-FastAPI app for calculate the fibonacci slice
+FastAPI app for calculate fibonacci slice
 
 # Requirements
 Docker
