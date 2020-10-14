@@ -25,13 +25,3 @@ def fibonacci(idx: int, cache={}):
 
     cache[idx] = fibonacci(idx - 1, cache) + fibonacci(idx - 2, cache)
     return cache.get(idx)
-
-
-if __name__ == '__main__':
-    import redis
-    cache = redis.Redis()
-    # # cache.set_response_callback('get', int) # ошибка где-то тут
-    # print(cache.get(101))
-    # print(fibonacci(101, cache))
-    fibonacci_slice = [fibonacci(x) for x in range(0, 102)]
-    print(fibonacci_slice)
