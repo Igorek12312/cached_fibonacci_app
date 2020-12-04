@@ -11,7 +11,7 @@ def convert_result_to_int(func):
 
 
 @convert_result_to_int
-def fibonacci(idx: int, cache={}):
+def fibonacci(idx: int, cache):
     """
     расчёт числа из ряда Фибоначи, где 0ое значение равно 0, а 1ое равно 1.
     В переменную cache может принимать как redis.Redis(), так и dict()
